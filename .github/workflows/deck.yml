@@ -1,0 +1,13 @@
+name: Test pipeline
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  christmas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say it is christmas
+        run: echo "Merry Christmas"
+      
